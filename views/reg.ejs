@@ -1,0 +1,29 @@
+<% include header %>
+<form class="form-horizontal" method="post">
+  <fieldset>
+    <legend>用户注册</legend>
+    <div class="control-group">
+       <label for="username" class="control-label">用户名</label>
+       <div class="controls">
+          <input type="text" name="username" class="input-xlarge" id="username">
+          <p class="help-block">你得账户名称，用于登录和显示。</p>
+       </div>
+    </div>
+    <div class="control-group">
+      <label for="password" class="control-label">口令</label>
+      <div class="controls">
+         <input type="password" name="password" class="input-xlarge" id="password">
+      </div>
+    </div>
+    <div class="control-group">
+      <label for="password-repeat" class="control-label">口令</label>
+      <div class="controls">
+         <input type="password" name="password-repeat" class="input-xlarge" id="password-repeat">
+      </div>
+    </div>
+    <div class="form-actions">
+       <button type="submit" class="btn btn-primary" >注册</button>
+    </div>
+  </fieldset>
+</form>
+<% include footer %>

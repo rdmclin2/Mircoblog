@@ -1,0 +1,15 @@
+<% include header %>
+  <% if (!user) { %>
+    <div class="hero-unit">
+      <h1>欢迎来到 Microblog</h1>
+      <p>请留下你想对我说得话</p>
+      <p>
+        <a class="btn btn-primary btn-large" href="/login">登录</a>
+        <a class="btn btn-large" href="/reg">立即注册</a>
+      </p>
+    </div>
+  <% } else { %>
+      <% include say %>
+  <% } %>
+  <% include posts %>
+<% include footer %>
