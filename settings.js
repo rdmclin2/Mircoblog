@@ -1,5 +1,6 @@
 module.exports = {
   cookieSecret: 'microblogmcl',
-  db: 'mocroblog',
-  host: 'localhost'
+  db: 'microblog',
+  host: 'mongodb://rdmclin2:1234567890@ds033760.mongolab.com',
+  port: 33760
 };

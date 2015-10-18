@@ -12,6 +12,9 @@ var flash = require('connect-flash');
 
 var routes = require('./routes/index');
 
+var dburl = settings.host+":"+settings.port+"/"+settings.db;
+//console.log(dburl);
+
 var app = express();
 
 // view engine setup
@@ -33,7 +36,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(session({
   secret: settings.cookieSecret,
   store: new MongoStore({
-    db: settings.db
+    url : dburl
   }),
   resave: true,
   saveUninitialized:true
