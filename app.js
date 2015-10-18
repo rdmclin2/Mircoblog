@@ -36,7 +36,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(session({
   secret: settings.cookieSecret,
   store: new MongoStore({
-    url : dburl
+    // url : dburl
+    db : settings.db
   }),
   resave: true,
   saveUninitialized:true
